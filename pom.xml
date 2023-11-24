@@ -28,9 +28,10 @@
           <version>1.4</version>
         </dependency>
         <dependency>
-            <groupId>unknown.binary</groupId>
-            <artifactId>edisoncorSX</artifactId>
-            <version>SNAPSHOT</version>
+            <groupId>io.github.ericdriggs</groupId>
+            <artifactId>reportcard-server</artifactId>
+            <version>0.0.5</version>
+            <type>jar</type>
         </dependency>
     </dependencies>
 
@@ -39,5 +40,17 @@
         <maven.compiler.target>20</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
+    <build>
+    <plugins>
+        <plugin>
+            <groupId>org.codehaus.mojo</groupId>
+            <artifactId>exec-maven-plugin</artifactId>
+            <version>3.1.0</version>
+            <configuration>
+                <mainClass>org.example.MyMenu</mainClass>
+            </configuration>
+        </plugin>
+    </plugins>
+</build>
 
 </project>

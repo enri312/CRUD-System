@@ -13,6 +13,19 @@ public class PersonaModels {
     public String Celular;
     public String Email;
     public String Estado;
+    
+    public PersonaModels(int Id, int IdCiudad, String Nombre, String Apellido, String TipoDocumento, String NroDocumento, String Direccion, String Celular, String Email, String estado) {
+        this.Id = Id;
+        this.IdCiudad = IdCiudad;
+        this.Nombre = Nombre;
+        this.Apellido = Apellido;
+        this.TipoDocumento = TipoDocumento;
+        this.NroDocumento = NroDocumento;    
+        this.Direccion = Direccion;
+        this.Celular = Celular;
+        this.Email = Email;
+        this.Estado = estado;
+    }
 
     public int getId_persona() {
         return Id;

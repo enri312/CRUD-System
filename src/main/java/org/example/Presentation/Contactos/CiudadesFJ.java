@@ -3,7 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
 package org.example.Presentation.Contactos;
-
+import javax.swing.JOptionPane;
 /**
  *
  * @author Carlos E.N.V
@@ -42,12 +42,11 @@ public class CiudadesFJ extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jLabel1.setFont(new java.awt.Font("Aptos", 3, 24)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(0, 102, 204));
         jLabel1.setText("Ciudades");
 
-        jLabel2.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(0, 102, 204));
+        jLabel2.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         jLabel2.setText("Id Ciudad:");
 
         txtIdCiudad.addKeyListener(new java.awt.event.KeyAdapter() {
@@ -56,16 +55,13 @@ public class CiudadesFJ extends javax.swing.JFrame {
             }
         });
 
-        jLabel3.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(0, 102, 204));
+        jLabel3.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         jLabel3.setText("Ciudad:");
 
-        jLabel4.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
-        jLabel4.setForeground(new java.awt.Color(0, 102, 204));
+        jLabel4.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         jLabel4.setText("Departamento:");
 
-        jLabel5.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
-        jLabel5.setForeground(new java.awt.Color(0, 102, 204));
+        jLabel5.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         jLabel5.setText("Codigo Postal:");
 
         jButton1.setBackground(new java.awt.Color(204, 204, 255));
@@ -107,10 +103,14 @@ public class CiudadesFJ extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addGap(253, 253, 253)
                 .addComponent(jLabel1)
-                .addContainerGap(249, Short.MAX_VALUE))
+                .addContainerGap(258, Short.MAX_VALUE))
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jSeparator1)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jSeparator1)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addComponent(txtDepartamento, javax.swing.GroupLayout.PREFERRED_SIZE, 492, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap())
             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(layout.createSequentialGroup()
@@ -136,8 +136,7 @@ public class CiudadesFJ extends javax.swing.JFrame {
                                         .addComponent(txtCiudad)))
                                 .addGroup(layout.createSequentialGroup()
                                     .addComponent(jLabel4)
-                                    .addGap(18, 18, 18)
-                                    .addComponent(txtDepartamento))
+                                    .addGap(0, 0, Short.MAX_VALUE))
                                 .addGroup(layout.createSequentialGroup()
                                     .addComponent(jLabel5)
                                     .addGap(18, 18, 18)
@@ -151,7 +150,9 @@ public class CiudadesFJ extends javax.swing.JFrame {
                 .addComponent(jLabel1)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(296, Short.MAX_VALUE))
+                .addGap(122, 122, 122)
+                .addComponent(txtDepartamento, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(152, Short.MAX_VALUE))
             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(layout.createSequentialGroup()
                     .addGap(109, 109, 109)
@@ -163,9 +164,7 @@ public class CiudadesFJ extends javax.swing.JFrame {
                         .addComponent(jLabel3)
                         .addComponent(txtCiudad, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGap(18, 18, 18)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(jLabel4)
-                        .addComponent(txtDepartamento, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jLabel4)
                     .addGap(18, 18, 18)
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(jLabel5)
@@ -175,7 +174,7 @@ public class CiudadesFJ extends javax.swing.JFrame {
                         .addComponent(jButton1)
                         .addComponent(jButton2)
                         .addComponent(jButton3))
-                    .addContainerGap(69, Short.MAX_VALUE)))
+                    .addContainerGap(73, Short.MAX_VALUE)))
         );
 
         pack();
@@ -183,7 +182,7 @@ public class CiudadesFJ extends javax.swing.JFrame {
 
     private void txtIdCiudadKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtIdCiudadKeyPressed
         if (evt.getKeyCode()==java.awt.event.KeyEvent.VK_ENTER){
-            consultarCiudad("id",txtIdCiudad.getText().trim());
+          //  consultarCiudad("id",txtIdCiudad.getText().trim());
 
         }
     }//GEN-LAST:event_txtIdCiudadKeyPressed
@@ -194,7 +193,7 @@ public class CiudadesFJ extends javax.swing.JFrame {
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         if (JOptionPane.showConfirmDialog(null, "Desea cancelar la operacion")==JOptionPane.YES_OPTION){
-            LimpiarCampos();
+           // LimpiarCampos();
         }
     }//GEN-LAST:event_jButton2ActionPerformed
 

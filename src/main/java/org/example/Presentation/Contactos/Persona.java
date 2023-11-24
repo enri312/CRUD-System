@@ -5,6 +5,12 @@
 package org.example.Presentation.Contactos;
 import org.example.Service.Contactos.PersonaService;
 
+//import org.example.Infraestructure.Conections.Conexiones;
+
+import java.sql.SQLException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
 /**
  *
  * @author Carlos E.N.V
@@ -78,7 +84,7 @@ public class Persona extends javax.swing.JFrame {
         Titulomain.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         Titulomain.setText("Personas");
 
-        btnCancelar.setText("Cancelar");
+        btnCancelar.setText("Buscar");
         btnCancelar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnCancelarActionPerformed(evt);
@@ -112,7 +118,7 @@ public class Persona extends javax.swing.JFrame {
             }
         });
 
-        btnNuevo.setText("Nuevo");
+        btnNuevo.setText("Crear");
         btnNuevo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnNuevoActionPerformed(evt);
@@ -121,7 +127,7 @@ public class Persona extends javax.swing.JFrame {
 
         btnModificar.setText("Modificar");
 
-        btnGuardar.setText("Guardar");
+        btnGuardar.setText("Eliminar");
 
         btnSalir.setText("Salir");
 
@@ -210,7 +216,7 @@ public class Persona extends javax.swing.JFrame {
                                         .addComponent(jTextField2, javax.swing.GroupLayout.Alignment.LEADING)
                                         .addComponent(jTextField1, javax.swing.GroupLayout.Alignment.LEADING)
                                         .addGroup(layout.createSequentialGroup()
-                                            .addComponent(txtpersona, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(txtpersona, javax.swing.GroupLayout.PREFERRED_SIZE, 134, javax.swing.GroupLayout.PREFERRED_SIZE)
                                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                             .addComponent(jButton6, javax.swing.GroupLayout.PREFERRED_SIZE, 78, javax.swing.GroupLayout.PREFERRED_SIZE)))
                                     .addComponent(jTextField4, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -262,7 +268,7 @@ public class Persona extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lvlemail, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jTextField6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(149, 149, 149)
+                .addGap(137, 137, 137)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btnCancelar)
                     .addComponent(btnNuevo)

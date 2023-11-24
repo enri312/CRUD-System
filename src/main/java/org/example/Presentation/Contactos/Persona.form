@@ -109,7 +109,7 @@
                                       <Component id="jTextField2" alignment="0" max="32767" attributes="0"/>
                                       <Component id="jTextField1" alignment="0" max="32767" attributes="0"/>
                                       <Group type="102" attributes="0">
-                                          <Component id="txtpersona" min="-2" pref="118" max="-2" attributes="0"/>
+                                          <Component id="txtpersona" min="-2" pref="134" max="-2" attributes="0"/>
                                           <EmptySpace max="32767" attributes="0"/>
                                           <Component id="jButton6" min="-2" pref="78" max="-2" attributes="0"/>
                                       </Group>
@@ -179,7 +179,7 @@
                   <Component id="lvlemail" alignment="3" min="-2" pref="22" max="-2" attributes="0"/>
                   <Component id="jTextField6" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace min="-2" pref="149" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="137" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="btnCancelar" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="btnNuevo" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -217,7 +217,7 @@
     </Component>
     <Component class="javax.swing.JButton" name="btnCancelar">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Cancelar"/>
+        <Property name="text" type="java.lang.String" value="Buscar"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnCancelarActionPerformed"/>
@@ -275,7 +275,7 @@
     </Component>
     <Component class="javax.swing.JButton" name="btnNuevo">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Nuevo"/>
+        <Property name="text" type="java.lang.String" value="Crear"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnNuevoActionPerformed"/>
@@ -288,7 +288,7 @@
     </Component>
     <Component class="javax.swing.JButton" name="btnGuardar">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Guardar"/>
+        <Property name="text" type="java.lang.String" value="Eliminar"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="btnSalir">
